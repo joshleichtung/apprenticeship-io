@@ -1,0 +1,2 @@
+class MailingListSubscriber < ApplicationRecord
+end
