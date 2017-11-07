@@ -80,6 +80,10 @@ test:
 #
 production:
   <<: *default
-  database: apprenticeship-io_production
-  username: apprenticeship-io
-  password: <%= ENV['APPRENTICESHIP-IO_DATABASE_PASSWORD'] %>
+  adaptger: postgresql
+  encoding: unicode
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
