@@ -1,0 +1,11 @@
+language: ruby
+rvm: 
+  - 2.3.3
+
+install:
+  - bundle install
+  - nvm install node
+  - npm i -g yarn
+  - yarn
+script:
+  - bundle exec rake spec
