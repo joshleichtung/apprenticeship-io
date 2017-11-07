@@ -4,12 +4,13 @@
 ## Rails
 * Run `bundle install`
 * Run `rails db:setup`
+* Run `gem install foreman` (required to run the webpack-dev-server and rails server simultaneously)
 
 ## React/webpacker (Yarn and [Node](https://nodejs.org/) version 6 or greater are requried)
 * Run `yarn` (If you don't have yarn installed, follow [these instructions](https://yarnpkg.com/lang/en/docs/install/))
 
 # Running the development server
-* Run `bin/server`, which will launch a rails server at http://localhost:5000 and will launch webpack-dev-server, which will automatically pakcage and hot reload js resources. 
+* Run `bin/server`, which will launch a rails server at http://localhost:5000 and will launch webpack-dev-server, which will automatically pakcage and hot reload js resources. Make sure you have foreman installed - `gem install foreman`
 
 # Development Notes
 * React/Javascript files live in /app/javascript/packs. 
