@@ -25,8 +25,8 @@ Apprentice.create({
   last_name: "Forde",
   linkedin_image_url: "https://media.licdn.com/media/AAEAAQAAAAAAAAYxAAAAJDE2MDY4OGIxLTFiMjMtNGMzYy1iODJkLTQ0MTQ0MzNjNDYwNw.jpg",
   current_title: "Developer",
-  current_company: "Uber",
-  apprenticeship_company: "Airbnb",
+  current_company: "Airbnb",
+  apprenticeship_company: "Uber",
   email: "c@forde@.com"
 })
 
@@ -66,7 +66,7 @@ Apprentice.create({
   last_name: "Forde",
   linkedin_image_url: "https://media.licdn.com/media/AAEAAQAAAAAAAAYxAAAAJDE2MDY4OGIxLTFiMjMtNGMzYy1iODJkLTQ0MTQ0MzNjNDYwNw.jpg",
   current_title: "Developer",
-  current_company: "Uber",
-  apprenticeship_company: "Airbnb",
+  current_company: "Airbnb",
+  apprenticeship_company: "Uber",
   email: "c@forde@.com"
 })
