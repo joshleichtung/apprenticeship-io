@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default class Header extends Component{
   render(){
     return(
-    <div className="header" style={styles.header}>
+    <header style={styles.header}>
       <div className="logo" style={styles.logo}>
 
       </div>
@@ -15,7 +15,7 @@ export default class Header extends Component{
           <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Join the Communitty</a></li>
         </ul>
       </div>
-    </div>
+    </header>
     )
   }
 }
