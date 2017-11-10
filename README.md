@@ -18,6 +18,15 @@
 * For the sake of consistency, react files that use jsx should have a file extension of .jsx
 * All json requests from the front end should be routed through the /api namespace on the rails backend. 
 * There is a PagesController already setup to route non-RESTful static pages, which will probably be the base of the app. I think we will only need one route in Rails since [React Router](https://github.com/ReactTraining/react-router) is set up. 
+## React Router
+The `config/routes` in Rails is set up to catch all non specified routes (eg the /api) to
+get routed to React Router. TODO - write a not found page to catch bad routes.
+### How to use React Router
+* To link to a route inside a page, make sure to `import { Link } from 'react'`.
+  To create a link, use `<Link to={`resource/${resource_id}`}>Link Text</Link>`
+* To add a route, go to the `app/javascript/packs/components/Main.jsx` and add
+  the route to the `<Switch>` component by adding a child `<Route
+path='/resource/:id' component={ComponentName} />`
 
 # Continuous Integration
 * Travis CI is setup, and all pull requests must have a passing build to be merged.
