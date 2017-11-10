@@ -5,8 +5,8 @@ export default class Header extends Component{
   render(){
     return(
     <header style={styles.header}>
-      <div className="logo" style={styles.logo}>
-
+      <div className="logo">
+        <img src={require('../images/placeholder_logo')} style={styles.logo} />
       </div>
       <div className="header-links" style={styles.header_links}>
         <ul>
@@ -28,10 +28,10 @@ const styles = {
       margin: 'auto'
   },
   logo: {
-    width: '10%',
-    height: '100%',
+    width: '30px',
     float: 'left',
-    backgroundImage: 'linear-gradient(-134deg, rgba(48,35,174,0.50) 0%, #C86DD7 100%)'
+    paddingLeft: '20px',
+    paddingTop: '10px'
   },
   header_links: {
     float: 'right',
