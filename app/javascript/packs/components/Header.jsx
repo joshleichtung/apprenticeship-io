@@ -28,14 +28,15 @@ const styles = {
       margin: 'auto'
   },
   logo: {
-    width: '15%',
+    width: '10%',
     height: '100%',
-    float: 'left'
+    float: 'left',
+    backgroundImage: 'linear-gradient(-134deg, rgba(48,35,174,0.50) 0%, #C86DD7 100%)'
   },
   header_links: {
     float: 'right',
     position: 'relative',
-    top: '35%'
+    top: '10%'
   },
   header_links_li: {
     display: 'inline',
