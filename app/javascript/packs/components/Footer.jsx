@@ -4,7 +4,7 @@ export default class Footer extends Component {
   render(){
     return(
       <footer style={styles.footer}>
-        <div className="links">
+        <div className="links" style={styles.links}>
         <ul style={styles.ul}>
           <li>
             Home
@@ -20,7 +20,7 @@ export default class Footer extends Component {
           </li>
         </ul>
       </div>
-      <div className="links">
+      <div className="links" style={styles.links}>
         <ul style={styles.ul}>
           <li>
             Employers
@@ -36,7 +36,7 @@ export default class Footer extends Component {
           </li>
         </ul>
       </div>
-      <div className="links">
+      <div className="links" style={styles.links}>
         <ul style={styles.ul}>
           <li>
             Apprentices
@@ -52,7 +52,7 @@ export default class Footer extends Component {
           </li>
         </ul>
       </div>
-      <div className="links">
+      <div className="links" style={styles.links}>
         <ul style={styles.ul}>
           <li>
             About Us
@@ -76,5 +76,8 @@ const styles = {
   },
   ul: {
     listStyle: 'none'
+  },
+  links: {
+    display: 'table-cell'
   }
 }
