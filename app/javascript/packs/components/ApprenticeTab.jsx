@@ -40,11 +40,9 @@ export default class ApprenticeTab extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Hall of Fame</h2>
       <div style={styles.headshotList}>
+        <h2 className="apprentice-title" style={styles.apprenticeTitle} >Hall of Fame</h2>
         {this.renderApprenticeInfo()}
-      </div>
     </div>
     )
   }
@@ -53,6 +51,12 @@ export default class ApprenticeTab extends Component {
 const styles = {
   headshotList: {
     display: 'flex',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    justifyContent: 'center'
+  },
+  apprenticeTitle: {
+    width: '100%',
+    textAlign: 'center',
+    fontSize: '2.5em'
   }
 }
