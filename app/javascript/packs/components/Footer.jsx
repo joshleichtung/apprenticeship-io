@@ -91,7 +91,8 @@ const styles = {
   },
   ul: {
     listStyle: 'none',
-    paddingRight: '40px'
+    paddingRight: '40px',
+    whiteSpace: 'nowrap'
   },
   links: {
     display: 'table-cell'
