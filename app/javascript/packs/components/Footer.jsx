@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 export default class Footer extends Component {
   render(){
     return(
-      <footer>
+      <footer style={styles.footer}>
         <div className="links">
-        <ul>
+        <ul style={styles.ul}>
           <li>
             Home
           </li>
@@ -21,7 +21,7 @@ export default class Footer extends Component {
         </ul>
       </div>
       <div className="links">
-        <ul>
+        <ul style={styles.ul}>
           <li>
             Employers
           </li>
@@ -37,7 +37,7 @@ export default class Footer extends Component {
         </ul>
       </div>
       <div className="links">
-        <ul>
+        <ul style={styles.ul}>
           <li>
             Apprentices
           </li>
@@ -53,7 +53,7 @@ export default class Footer extends Component {
         </ul>
       </div>
       <div className="links">
-        <ul>
+        <ul style={styles.ul}>
           <li>
             About Us
           </li>
@@ -64,5 +64,17 @@ export default class Footer extends Component {
       </div>
       </footer>
     )
+  }
+}
+
+const styles = {
+  footer: {
+    height: '250px',
+    width: '100%',
+    backgroundImage: 'linear-gradient(-134deg, rgba(48,35,174,0.50) 0%, #C86DD7 100%)',
+    color: 'white'
+  },
+  ul: {
+    listStyle: 'none'
   }
 }
