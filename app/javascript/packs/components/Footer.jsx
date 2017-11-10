@@ -84,7 +84,7 @@ export default class Footer extends Component {
 
 const styles = {
   footer: {
-    height: '250px',
+    height: '300px',
     width: '100%',
     backgroundImage: 'linear-gradient(-134deg, rgba(48,35,174,0.50) 0%, #C86DD7 100%)',
     color: 'white'
@@ -97,6 +97,7 @@ const styles = {
     display: 'table-cell'
   },
   links_container: {
+    paddingTop: '40px',
     width: '50%',
     margin: '0 auto'
   },
