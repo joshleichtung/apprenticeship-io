@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     resources :apprentices, only: [:index]
   end
   root "pages#home"
+  get "*path", to: "pages#home"
 end

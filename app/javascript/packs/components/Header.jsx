@@ -11,7 +11,7 @@ export default class Header extends Component{
       <div className="header-links" style={styles.header_links}>
         <ul>
           <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Employers</a></li>
-          <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Apprentices</a></li>
+          <li style={styles.header_links_li}><Link to="hall_of_fame" style={styles.anchors}>Apprentices</Link></li>
           <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Join the Communitty</a></li>
         </ul>
       </div>
