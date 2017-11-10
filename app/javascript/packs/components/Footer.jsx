@@ -64,8 +64,18 @@ export default class Footer extends Component {
           </ul>
         </div>
       </div>
-      <div className="join" style={styles.join}>
-        Join the Community
+      <div className="join">
+        <div style={styles.join_header}>
+          Join the Community
+        </div>
+        <div className="footer_logos" style={styles.logos_container}>
+          <img src={require('../images/footer_logos/eventbrite.png')} style={styles.logo} />
+          <img src={require('../images/footer_logos/linkedin.png')} style={styles.logo}/>
+          <img src={require('../images/footer_logos/mailchimp.png')} style={styles.logo}/>
+          <img src={require('../images/footer_logos/medium.png')} style={styles.logo}/>
+          <img src={require('../images/footer_logos/meetup.png')} style={styles.logo}/>
+          <img src={require('../images/footer_logos/slack.png')} style={styles.logo}/>
+        </div>
       </div>
       </footer>
     )
@@ -90,8 +100,15 @@ const styles = {
     width: '50%',
     margin: '0 auto'
   },
-  join: {
+  join_header: {
     textAlign: 'center',
     margin: '15px'
+  },
+  logos_container: {
+    textAlign: 'center'
+  },
+  logo: {
+    width: '40px',
+    margin: '10px'
   }
 }
