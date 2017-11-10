@@ -10,9 +10,9 @@ export default class Header extends Component{
       </div>
       <div className="header-links" style={styles.header_links}>
         <ul>
-          <li style={styles.header_links_li}><a href="/">Employers</a></li>
-          <li style={styles.header_links_li}><a href="/">Apprentices</a></li>
-          <li style={styles.header_links_li}><a href="/">Join the Communitty</a></li>
+          <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Employers</a></li>
+          <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Apprentices</a></li>
+          <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Join the Communitty</a></li>
         </ul>
       </div>
     </div>
@@ -41,5 +41,9 @@ const styles = {
   header_links_li: {
     display: 'inline',
     padding: '10px'
+  },
+  anchors: {
+    textDecoration: 'none',
+    color: 'black'
   }
 }
