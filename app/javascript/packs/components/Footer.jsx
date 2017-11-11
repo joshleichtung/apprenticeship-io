@@ -112,6 +112,5 @@ const styles = {
   logo: {
     width: '40px',
     margin: '10px'
-  },
-  footer2: FooterCSS
+  }
 }
