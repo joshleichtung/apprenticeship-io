@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import FooterCSS from '../styles/footer'
 
 export default class Footer extends Component {
   render(){
@@ -84,23 +85,23 @@ export default class Footer extends Component {
 
 const styles = {
   footer: {
-    height: '250px',
     width: '100%',
     backgroundImage: 'linear-gradient(-134deg, rgba(48,35,174,0.50) 0%, #C86DD7 100%)',
     color: 'white'
   },
   ul: {
     listStyle: 'none',
-    paddingRight: '40px',
-    whiteSpace: 'nowrap'
+    whiteSpace: 'nowrap',
+    margin: '0px',
+    padding: '25px'
   },
   links: {
-    display: 'table-cell'
+
   },
   links_container: {
-    paddingTop: '30px',
-    width: '50%',
-    margin: '0 auto'
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap'
   },
   join_header: {
     textAlign: 'center',
@@ -112,5 +113,6 @@ const styles = {
   logo: {
     width: '40px',
     margin: '10px'
-  }
+  },
+  footer2: FooterCSS
 }
