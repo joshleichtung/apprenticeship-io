@@ -7,58 +7,58 @@ export default class Footer extends Component {
         <div className="links-container" style={styles.links_container}>
           <div className="links" style={styles.links}>
           <ul style={styles.ul}>
-            <li>
+            <li style={styles.li}>
               Home
             </li>
-            <li>
+            <li style={styles.li}>
               Concept
             </li>
-            <li>
+            <li style={styles.li}>
               Value
             </li>
-            <li>
+            <li style={styles.li}>
               Resources
             </li>
           </ul>
         </div>
         <div className="links" style={styles.links}>
           <ul style={styles.ul}>
-            <li>
+            <li style={styles.li}>
               Employers
             </li>
-            <li>
+            <li style={styles.li}>
               Concept & Value
             </li>
-            <li>
+            <li style={styles.li}>
               Map of Apprenticeships
             </li>
-            <li>
+            <li style={styles.li}>
               Resources
             </li>
           </ul>
         </div>
         <div className="links" style={styles.links}>
           <ul style={styles.ul}>
-            <li>
+            <li style={styles.li}>
               Apprentices
             </li>
-            <li>
+            <li style={styles.li}>
               Concept & Value
             </li>
-            <li>
+            <li style={styles.li}>
               Map of Apprenticeships
             </li>
-            <li>
+            <li style={styles.li}>
               Hall of Fame
             </li>
           </ul>
         </div>
         <div className="links" style={styles.links}>
           <ul style={styles.ul}>
-            <li>
+            <li style={styles.li}>
               About Us
             </li>
-            <li>
+            <li style={styles.li}>
               Contact
             </li>
           </ul>
@@ -93,6 +93,9 @@ const styles = {
     whiteSpace: 'nowrap',
     margin: '0px',
     padding: '25px'
+  },
+  li: {
+    padding: '1px 0'
   },
   links: {
 
