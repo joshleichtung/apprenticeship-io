@@ -23,7 +23,6 @@ export default class Header extends Component{
 const styles = {
   header: {
       width: '100%',
-      height: '60px',
       background: 'white',
       display: 'flex',
       justifyContent: 'space-between',
@@ -38,10 +37,11 @@ const styles = {
   },
   header_links_ul:{
     display: 'flex',
-    listStyle: 'none'
+    listStyle: 'none',
+    flexWrap: 'wrap'
   },
   header_links_li: {
-    margin: '0 15px'
+    margin: '0px 15px'
   },
   anchors: {
     textDecoration: 'none',
