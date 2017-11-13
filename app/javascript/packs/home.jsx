@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
+import { BrowserRouter } from 'react-router-dom'
+import App from './components/App'
 import ApprenticeTab from './components/ApprenticeTab'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
 const Home = props => (
-  <div>
-    <Header />
-    <ApprenticeTab />
-    <Footer />
-  </div>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 )
 
 
