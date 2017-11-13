@@ -9,7 +9,7 @@ export default class Header extends Component{
         <img src={require('../images/placeholder_logo')} style={styles.logo} />
       </div>
       <div className="header-links" style={styles.header_links}>
-        <ul>
+        <ul style={styles.header_links_ul}>
           <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Employers</a></li>
           <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Apprentices</a></li>
           <li style={styles.header_links_li}><a href="/" style={styles.anchors}>Join the Communitty</a></li>
@@ -23,24 +23,25 @@ export default class Header extends Component{
 const styles = {
   header: {
       width: '100%',
-      height: '60px',
       background: 'white',
-      margin: 'auto'
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center'
   },
   logo: {
     width: '30px',
-    float: 'left',
-    paddingLeft: '20px',
-    paddingTop: '10px'
+    paddingLeft: '10px'
   },
   header_links: {
-    float: 'right',
-    position: 'relative',
-    top: '10%'
+
+  },
+  header_links_ul:{
+    display: 'flex',
+    listStyle: 'none',
+    flexWrap: 'wrap'
   },
   header_links_li: {
-    display: 'inline',
-    padding: '10px'
+    margin: '0px 15px'
   },
   anchors: {
     textDecoration: 'none',

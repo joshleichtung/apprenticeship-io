@@ -7,58 +7,58 @@ export default class Footer extends Component {
         <div className="links-container" style={styles.links_container}>
           <div className="links" style={styles.links}>
           <ul style={styles.ul}>
-            <li>
+            <li style={styles.li}>
               Home
             </li>
-            <li>
+            <li style={styles.li}>
               Concept
             </li>
-            <li>
+            <li style={styles.li}>
               Value
             </li>
-            <li>
+            <li style={styles.li}>
               Resources
             </li>
           </ul>
         </div>
         <div className="links" style={styles.links}>
           <ul style={styles.ul}>
-            <li>
+            <li style={styles.li}>
               Employers
             </li>
-            <li>
+            <li style={styles.li}>
               Concept & Value
             </li>
-            <li>
+            <li style={styles.li}>
               Map of Apprenticeships
             </li>
-            <li>
+            <li style={styles.li}>
               Resources
             </li>
           </ul>
         </div>
         <div className="links" style={styles.links}>
           <ul style={styles.ul}>
-            <li>
+            <li style={styles.li}>
               Apprentices
             </li>
-            <li>
+            <li style={styles.li}>
               Concept & Value
             </li>
-            <li>
+            <li style={styles.li}>
               Map of Apprenticeships
             </li>
-            <li>
+            <li style={styles.li}>
               Hall of Fame
             </li>
           </ul>
         </div>
         <div className="links" style={styles.links}>
           <ul style={styles.ul}>
-            <li>
+            <li style={styles.li}>
               About Us
             </li>
-            <li>
+            <li style={styles.li}>
               Contact
             </li>
           </ul>
@@ -84,23 +84,26 @@ export default class Footer extends Component {
 
 const styles = {
   footer: {
-    height: '250px',
     width: '100%',
     backgroundImage: 'linear-gradient(-134deg, rgba(48,35,174,0.50) 0%, #C86DD7 100%)',
     color: 'white'
   },
   ul: {
     listStyle: 'none',
-    paddingRight: '40px',
-    whiteSpace: 'nowrap'
+    whiteSpace: 'nowrap',
+    margin: '0px',
+    padding: '25px'
+  },
+  li: {
+    padding: '1px 0'
   },
   links: {
-    display: 'table-cell'
+
   },
   links_container: {
-    paddingTop: '30px',
-    width: '50%',
-    margin: '0 auto'
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap'
   },
   join_header: {
     textAlign: 'center',
