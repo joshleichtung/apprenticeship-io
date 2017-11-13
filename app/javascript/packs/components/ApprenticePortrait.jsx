@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 export default class ApprenticePortrait extends Component {
   constructor(props) {
@@ -34,6 +35,15 @@ export default class ApprenticePortrait extends Component {
       </div>
     )
   }
+}
+
+ApprenticePortrait.propTypes = {
+  linkedin_image_url: PropTypes.string.isRequired,
+  first_name: PropTypes.string.isRequired,
+  last_name: PropTypes.string.isRequired,
+  apprenticeship_company: PropTypes.string.isRequired,
+  current_title: PropTypes.string.isRequired,
+  current_company: PropTypes.string.isRequired
 }
 
 const styles = {
