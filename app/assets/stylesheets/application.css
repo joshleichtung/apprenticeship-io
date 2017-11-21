@@ -20,4 +20,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-
+.main-content {
+  max-width: 960px;
+  margin: 0 auto;
+}

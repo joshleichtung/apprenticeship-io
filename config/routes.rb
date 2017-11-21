@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   namespace :api do
     resources :apprentices, only: [:index]
   end
-  root "pages#home"
-  get "*path", to: "pages#home"
+  root 'pages#home'
+  get '*path', to: 'pages#home'
 end
