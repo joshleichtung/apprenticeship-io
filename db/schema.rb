@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171101224820) do
+ActiveRecord::Schema.define(version: 20171121163316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,11 @@ ActiveRecord::Schema.define(version: 20171101224820) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "linkedin_token"
+    t.datetime "linkedin_token_expiration"
+    t.string "linkedin_url"
+    t.string "location"
+    t.string "description"
   end
 
   create_table "apprenticeships", force: :cascade do |t|
@@ -41,6 +46,14 @@ ActiveRecord::Schema.define(version: 20171101224820) do
 
   create_table "mailing_list_subscribers", force: :cascade do |t|
     t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
