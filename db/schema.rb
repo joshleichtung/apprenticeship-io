@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121163316) do
+ActiveRecord::Schema.define(version: 20171121164657) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 20171121163316) do
     t.string "linkedin_url"
     t.string "location"
     t.string "description"
+    t.string "uid"
+    t.index ["uid"], name: "index_apprentices_on_uid"
   end
 
   create_table "apprenticeships", force: :cascade do |t|

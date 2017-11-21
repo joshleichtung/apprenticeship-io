@@ -1,12 +1,12 @@
-class Api::ApprenticesController < ApplicationController
-  def index
-    render json: Apprentice.all
+class SessionsController < ApplicationController
+  def apprentice_login
+    apprentice = Apprentice.find_or_create_from_auth_hash(auth_hash)
+    render json: apprentice
   end
 
-  def login
-    apprentice = Apprentice.find_or_create_from_auth_hash(auth_hash)
-    binding.pry
-    render json: apprentice
+  def sign_in
+    redirect_to "https://www.linkedin.com/oauth/v2/authorization
+?client_id=#{ENV['LINKEDIN_CLIENT_ID']}"
   end
 
   protected

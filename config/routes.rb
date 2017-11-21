@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   namespace :api do
     resources :apprentices, only: [:index]
   end
+
+  get '/auth/linkedin/callback', to: 'sessions#apprentice_login'
+
   root 'pages#home'
+
   get '*path', to: 'pages#home'
 end
