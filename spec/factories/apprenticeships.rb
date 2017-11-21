@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :apprenticeship do
     url "MyString"
     company_name "MyString"
