@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def apprentice_login
     apprentice = Apprentice.find_or_create_from_auth_hash(auth_hash)
-    render json: apprentice
+    redirect_to '/hall_of_fame'
   end
 
   def sign_in
