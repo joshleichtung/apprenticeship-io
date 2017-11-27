@@ -70,3 +70,13 @@ Apprentice.create({
   apprenticeship_company: "Uber",
   email: "c@forde@.com"
 })
+
+Apprenticeship.create({
+  url: "www.linkedin.com/in/janewillborn",
+  company_name: "LinkedIn",
+  city: "San Francisco",
+  state: "California",
+  description: "It's an apprenticeship",
+  duration: "a year",
+  start_date: "January"
+  })
