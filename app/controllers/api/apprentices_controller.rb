@@ -4,8 +4,7 @@ class Api::ApprenticesController < ApplicationController
   end
 
   def show
-    uid = Tokenize.decode(cookies[:jwt]).first['sub']['uid']
-    apprentice = Apprentice.find_by(uid: uid)
+    apprentice = current_apprentice
     if apprentice
       render json: apprentice
     else
