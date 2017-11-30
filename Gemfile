@@ -26,13 +26,16 @@ gem 'webpacker'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#
+# JWT for token authentication
+gem 'jwt'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -62,6 +65,8 @@ group :development do
   # Bullet helps avoid making unneccessary queries by notifying about n+1
   # queries so they can be eager loaded.
   gem 'bullet'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
 end
 
 group :test do
