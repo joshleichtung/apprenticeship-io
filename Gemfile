@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "~> 2.3.0"
+ruby "~> 2.4.2"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -26,25 +26,32 @@ gem 'webpacker'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#
+# JWT for token authentication
+gem 'jwt'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'omniauth'
+gem 'omniauth-linkedin-oauth2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
-  gem 'pry-byebug'
+  gem 'pry-remote'
+  gem 'pry-byebug', '1.3.3'
   gem 'dotenv-rails'
   gem "awesome_print"
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
   gem "rspec-rails", "~> 3.6"
 end
 
@@ -58,6 +65,8 @@ group :development do
   # Bullet helps avoid making unneccessary queries by notifying about n+1
   # queries so they can be eager loaded.
   gem 'bullet'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
 end
 
 group :test do
