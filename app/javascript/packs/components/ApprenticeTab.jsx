@@ -20,6 +20,10 @@ export default class ApprenticeTab extends Component {
         })
       })
       .catch(error => console.log(error))
+
+    axios.get('/api/profile')
+      .then(({data}) => console.log(data))
+      .catch(console.log)
   }
 
   unhide(e) {
@@ -40,10 +44,13 @@ export default class ApprenticeTab extends Component {
 
   render() {
     return (
-      <div style={styles.headshotList}>
-        <h2 className="apprentice-title" style={styles.apprenticeTitle} >Hall of Fame</h2>
-        {this.renderApprenticeInfo()}
-    </div>
+      <div style={styles.centerText}>
+        <div style={styles.headshotList}>
+          <h2 className="apprentice-title" style={styles.apprenticeTitle} >Hall of Fame</h2>
+          {this.renderApprenticeInfo()}
+        </div>
+        <a href="/auth/linkedin">Login with LinkedIn and tell us your story</a>
+      </div>
     )
   }
 }
@@ -52,11 +59,16 @@ const styles = {
   headshotList: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingBottom: '16px'
   },
   apprenticeTitle: {
     width: '100%',
     textAlign: 'center',
-    fontSize: '2.5em'
+    fontSize: '2.5em',
+  },
+  centerText: {
+    textAlign: 'center',
+    paddingBottom: '16px'
   }
 }

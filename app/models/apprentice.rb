@@ -17,6 +17,18 @@ class Apprentice < ApplicationRecord
     end
   end
 
+  def details
+    {
+        first_name: self.first_name,
+        last_name: self.last_name,
+        current_title: self.current_title,
+        current_company: self.current_company,
+        hall_of_famer: self.hall_of_famer?,
+        linkedin_url: self.linkedin_url,
+        linkedin_image_url: self.linkedin_image_url
+    }
+  end
+
   def to_json(options = {})
     options[:except] ||= [:linkedin_token, :linkedin_token_expiration]
     super(options)

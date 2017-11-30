@@ -1,6 +1,6 @@
 class Api::ApprenticesController < ApplicationController
   def index
-    render json: Apprentice.all
+    render json: Apprentice.all.map(&:details)
   end
 
   def show

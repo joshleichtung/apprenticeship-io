@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121164657) do
+ActiveRecord::Schema.define(version: 20171130233700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20171121164657) do
     t.string "location"
     t.string "description"
     t.string "uid"
+    t.boolean "hall_of_famer?", default: false
     t.index ["uid"], name: "index_apprentices_on_uid"
   end
 

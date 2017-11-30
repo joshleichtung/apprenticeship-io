@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     if apprentice.valid?
       token = Tokenize.encode({uid: apprentice.uid})
       cookies[:jwt] = {value: token, httponly: true}
-      redirect_to "/apprentices/#{apprentice.id}"
+      redirect_to '/profile'
     else
       flash[:error] = "Login Failed"
       redirect_to '/apprentice/info'

@@ -18,7 +18,8 @@ Apprentice.create({
   current_title: "Developer",
   current_company: "thoughtbot",
   apprenticeship_company: "thoughtbot",
-  email: "d@carr.com"
+  email: "d@carr.com",
+  hall_of_famer?: true
 })
 
 Apprentice.create({
@@ -29,7 +30,8 @@ Apprentice.create({
   current_title: "Developer",
   current_company: "Airbnb",
   apprenticeship_company: "Uber",
-  email: "c@forde@.com"
+  email: "c@forde@.com",
+  hall_of_famer?: true
 })
 
 
@@ -41,7 +43,8 @@ Apprentice.create({
   current_title: "Software Engineer",
   current_company: "LinkedIn",
   apprenticeship_company: "LinknedIn",
-  email: "e@t.com"
+  email: "e@t.com",
+  hall_of_famer?: true
 })
 
 Apprentice.create({
@@ -52,7 +55,8 @@ Apprentice.create({
   current_title: "Software Engineer",
   current_company: "LinkedIn",
   apprenticeship_company: "LinknedIn",
-  email: "I@a.com"
+  email: "I@a.com",
+  hall_of_famer?: true
 })
 
 Apprentice.create({
@@ -63,7 +67,8 @@ Apprentice.create({
   current_title: "Developer",
   current_company: "thoughtbot",
   apprenticeship_company: "thoughtbot",
-  email: "d@carr.com"
+  email: "d@carr.com",
+  hall_of_famer?: true
 })
 
 Apprentice.create({
@@ -74,5 +79,6 @@ Apprentice.create({
   current_title: "Developer",
   current_company: "Airbnb",
   apprenticeship_company: "Uber",
-  email: "c@forde@.com"
+  email: "c@forde@.com",
+  hall_of_famer?: true
 })
