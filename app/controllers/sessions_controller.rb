@@ -1,12 +1,21 @@
 class SessionsController < ApplicationController
   def apprentice_login
     apprentice = Apprentice.find_or_create_from_auth_hash(auth_hash)
-    redirect_to '/hall_of_fame'
+    if apprentice.valid?
+      token = Tokenize.encode({uid: apprentice.uid})
+      cookies[:jwt] = {value: token, httponly: true}
+      redirect_to '/apprentices'
+    else
+      flash[:error] = "Login Failed"
+      redirect_to '/apprentice/info'
+    end
   end
 
-  def sign_in
-    redirect_to "https://www.linkedin.com/oauth/v2/authorization
-?client_id=#{ENV['LINKEDIN_CLIENT_ID']}"
+  def apprentice_logout
+    session.delete('session_id')
+    session.delete('_csrf_token')
+    session.delete('jwt')
+    redirect_to '/test'
   end
 
   protected
